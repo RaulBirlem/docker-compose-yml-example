@@ -1,7 +1,6 @@
-# docker-compose-yml-example
-
 version: "3.8"
 services:
+
     redis:
         image: redis:latest
         container_name: "redis"
