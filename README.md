@@ -1,7 +1,7 @@
 # docker-compose-yml-example
+
 version: "3.8"
 services:
-
     redis:
         image: redis:latest
         container_name: "redis"
@@ -45,7 +45,7 @@ services:
       image: mongodb:latest
       container_name: 'mongo'
       ports:
-         - 27017>27017
+         - 27017:27017
       command: --default-authentication-plugin=mysql_native_password
       networks:
           - default
